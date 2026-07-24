@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.page-content{
+    width:100%;
+    max-width:600px;
+    text-align:center;
+    padding:30px 20px 90px;
+}
+
+/* Logo */
+
+.logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+
+/* Heading */
+
+.main-heading{
+    font-size:52px;
+    font-weight:900;
+    color:#356AE6;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.tagline{
+    font-size:22px;
+    color:#e91e63;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+/* WhatsApp Button */
+
+.join-btn{
+    display:inline-flex !important;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    text-decoration:none;
+    background:linear-gradient(90deg,#008cff,#6558ff) !important;
+    color:#fff !important;
+    padding:18px 35px !important;
+    border-radius:10px !important;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.join-btn:hover{
+    transform:translateY(-3px);
+}
+
+.join-btn img{
+    width:50px !important;
+    height:50px !important;
+}
+
+/* Countdown */
+
+.countdown{
+    margin-top:25px;
+    color:#ff4500;
+    font-size:22px;
+    font-weight:bold;
+}
+
+#timer{
+    color:red;
+}
+
+/* Quote */
+
+.quote{
+    margin-top:20px;
+    color:#2e8b57;
+    font-size:22px;
+    font-style:italic;
+}
+
+/* Users */
+
+.users{
+    margin-top:30px;
+    font-size:62px;
+    color:#ff3d2e;
+    font-weight:900;
+}
+
+.subtext{
+    display:block;
+    font-size:22px;
+    color:#444;
+    margin-top:5px;
+}
+
+/* Features */
+
+.features{
+    display:inline-block;
+    text-align:left;
+    margin-top:40px;
+}
+
+.features p{
+    font-size:24px;
+    margin:18px 0;
+}
+
+/* Marquee */
+
+.marquee-container{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    background:#eef6ff;
+    border-top:2px solid #d9d9d9;
+    padding:12px 0;
+    z-index:999;
+}
+
+.marquee-text{
+    display:inline-block;
+    color:#d00000;
+    font-size:22px;
+    font-weight:bold;
+    animation:marquee 18s linear infinite;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logo img{
+    width:90px;
+    height:90px;
+}
+
+.main-heading{
+    font-size:34px;
+}
+
+.tagline{
+    font-size:18px;
+}
+
+.join-btn{
+    width:100%;
+    font-size:18px;
+    padding:16px !important;
+}
+
+.join-btn img{
+    width:40px !important;
+    height:40px !important;
+}
+
+.countdown{
+    font-size:18px;
+}
+
+.quote{
+    font-size:18px;
+}
+
+.users{
+    font-size:48px;
+}
+
+.subtext{
+    font-size:18px;
+}
+
+.features p{
+    font-size:18px;
+}
+
+.marquee-text{
+    font-size:18px;
+}
+}
